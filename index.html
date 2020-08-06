@@ -8,37 +8,36 @@
 <body>
 
     <script>
-       
+
+
+const firstPlayer = window.prompt("Rock, Paper, or Scissors")
+const secondPlayer =window.prompt("Rock, Paper, or Scissors")     
 function computerPlay(){
-    playerSelection=window.prompt("show me your hand")
-
-    if(playerSelection=="rock"){
-        return 'rock',
-        alert('rock beats scissors,the player wins')
-    }else if(playerSelection=='paper'){
-        return 'paper'
-    alert('scissors beats paper,player loses')
-    
-    }
-    else(playerSelection=='scissors')
-        alert('scissors cuts paper,player wins')
-     return 'Scissors'
-    
+ 
 }
-function game(scores,reports){
+
 function playRound(playerSelection,computerSelection){
-    return playRound(playerSelection,computerSelection),'You wins'
-}
-const playerSelection='rock'
-const computerSelection=computerPlay()
-console.log(playRound(playerSelection,computerSelection))
-console.log(playRound(playerSelection,computerSelection))
-console.log(playRound(playerSelection,computerSelection))
-console.log(playRound(playerSelection,computerSelection))
-console.log(playRound(playerSelection,computerSelection))
-}
+    const r = "Rock"
+    const p = "Paper"
+    const s = "Scissors"  
+    if(playerSelection==computerSelection){
+        console.log("Tie")
+    
+    }else{
+        if(playerSelection ==r && computerSelection==s || playerSelection ==s && computerSelection==p){
+            console.log("First player wins")
+        
+                 }else{
+                     console.log("Second player wins")
+                 }
 
-game()
+    }}
+    playRound(firstPlayer,secondPlayer)
+    
+
+const playerSelection='rock'
+const computerSelection=computerPlay(firstPlayer,secondPlayer)
+
     </script>
     
 </body>
