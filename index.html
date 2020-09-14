@@ -3,42 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RockPaperScissors</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock</title>
+    <link rel="stylesheet" href="game.css">
 </head>
 <body>
+   <header>
+       <h1 style="text-align:center">ROCK PAPER SCISSORS GAME</h1>
+   </header>
+   <section style="text-align:center;display:block">
+       <button  id="player" style="padding:10px">Player selectuion</button>
+       <button id="computer" style="padding:10px">computer selection</button>
+       <button id="winner" style="padding:10px">choose winner</button>
+   </section>
 
-    <script>
 
 
-const firstPlayer = window.prompt("Rock, Paper, or Scissors")
-const secondPlayer =window.prompt("Rock, Paper, or Scissors")     
-function computerPlay(){
- 
-}
 
-function playRound(playerSelection,computerSelection){
-    const r = "Rock"
-    const p = "Paper"
-    const s = "Scissors"  
-    if(playerSelection==computerSelection){
-        console.log("Tie")
-    
-    }else{
-        if(playerSelection ==r && computerSelection==s || playerSelection ==s && computerSelection==p){
-            console.log("First player wins")
-        
-                 }else{
-                     console.log("Second player wins")
-                 }
-
-    }}
-    playRound(firstPlayer,secondPlayer)
-    
-
-const playerSelection='rock'
-const computerSelection=computerPlay(firstPlayer,secondPlayer)
-
-    </script>
+<script src="game.js"></script>
     
 </body>
 </html>
